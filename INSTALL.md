@@ -1,12 +1,14 @@
 # Nowah Travel MCP Server — Installation Guide
 
-The Nowah MCP server is available as a **remote HTTP server** — no local installation, Docker, or npm package required. Connect any MCP-compatible client to:
+Your personal AI travel concierge. Connect any MCP-compatible AI assistant to Nowah and get instant access to flight search and booking across 300+ airlines, hotel reservations, 116M+ points of interest, live flight tracking, AI-powered seat recommendations, visa requirements, weather forecasts, currency conversion, safety advisories, and full trip lifecycle management.
+
+The Nowah MCP server is a **remote HTTP server** — no local installation, no Docker, no npm package required. Connect directly:
 
 ```
 https://claw.nowah.xyz/mcp
 ```
 
-Authentication is handled via OAuth (the server will prompt you to sign in on first connection).
+Authentication is handled via OAuth (your MCP client will open a browser to sign in on first connection).
 
 ---
 
@@ -149,10 +151,10 @@ Once connected, you get access to 35+ travel tools:
 | **Seatmaps** | `get_seat_info`, `get_seat_recommendations` |
 | **Order Management** | `get_cancellation_quote`, `confirm_cancellation`, `get_order_services`, `add_order_services`, `create_change_request`, `confirm_flight_change` |
 | **Payments** | `create_checkout_session`, `list_payment_methods`, `pay_with_saved_card`, `get_payment_status`, `manage_payment_method` |
-| **Travel Info** | `get_visa_requirements`, `get_weather`, `convert_currency`, `get_safety_info` |
-| **POIs & Itinerary** | `find_pois` (51M+ locations), `generate_itinerary` |
+| **Travel Intelligence** | `get_visa_requirements`, `get_weather`, `convert_currency`, `get_safety_info` |
+| **POIs & Itinerary** | `find_pois` (116M+ locations), `generate_itinerary` |
 | **Claims** | `check_claim_eligibility`, `file_claim`, `list_claims` |
-| **AI Agent** | `chat_with_agent` |
+| **AI Concierge** | `chat_with_agent` |
 | **Meta** | `get_usage_stats`, `get_server_info` |
 
 ---
@@ -161,9 +163,9 @@ Once connected, you get access to 35+ travel tools:
 
 After setup, ask your AI assistant:
 
-> "Use nowah to search for flights from NYC to London next week"
+> "Search for flights from NYC to London next week"
 
-If the connection is working, it will call `search_flights` and return real results.
+If the connection is working, it will call `search_flights` and return real flight results with prices.
 
 ---
 
