@@ -1,0 +1,41 @@
+{
+  "name": "io.github.Nowah-xyz/nowah-travel",
+  "description": "AI travel assistant — search and book flights, hotels, trip planning, 51M+ POIs, weather, visa requirements, flight tracking, seatmap intelligence, currency conversion, and travel safety info",
+  "repository": {
+    "url": "https://github.com/Nowah-xyz/nowah-mcp-server",
+    "source": "github"
+  },
+  "version_detail": {
+    "version": "1.0.0",
+    "release_date": "2026-03-02",
+    "is_latest": true
+  },
+  "remotes": [
+    {
+      "transportType": "http",
+      "url": "https://claw.nowah.xyz/mcp"
+    }
+  ],
+  "packages": [],
+  "tools": [
+    { "name": "search_flights", "description": "Search for flights between airports with flexible date/passenger options" },
+    { "name": "search_hotels", "description": "Search for hotels by city, dates, and guest count" },
+    { "name": "book_flight", "description": "Book a flight offer for passengers" },
+    { "name": "book_hotel", "description": "Book a hotel room" },
+    { "name": "find_pois", "description": "Discover points of interest from 51M+ locations worldwide" },
+    { "name": "generate_itinerary", "description": "Generate a day-by-day travel itinerary for a destination" },
+    { "name": "get_visa_requirements", "description": "Check visa requirements between two countries" },
+    { "name": "get_weather", "description": "Get current weather and forecasts for any location" },
+    { "name": "convert_currency", "description": "Convert between currencies with live exchange rates" },
+    { "name": "get_safety_info", "description": "Get travel safety information for a country" },
+    { "name": "get_flight_info", "description": "Track a flight by flight number" },
+    { "name": "get_airport_delays", "description": "Check current delay status at an airport" },
+    { "name": "get_seat_info", "description": "Get detailed seatmap and seat information for a flight" },
+    { "name": "get_seat_recommendations", "description": "Get AI-powered seat recommendations based on preferences" },
+    { "name": "list_trips", "description": "List all trips for the authenticated user" },
+    { "name": "get_trip", "description": "Get detailed trip information" },
+    { "name": "create_trip", "description": "Create a new trip" },
+    { "name": "chat_with_agent", "description": "Chat with the Nowah AI travel agent" },
+    { "name": "get_usage_stats", "description": "Get API usage statistics" }
+  ]
+}
